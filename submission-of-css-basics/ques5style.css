@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    text-align: center;
+}
+
+h1 {
+    margin: 40px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 20px;
+}
+
+.plan {
+    width: 30%;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    /* Equal height */
+    display: flex;
+    flex-direction: column;
+
+    /* Smooth animation */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #e0f2fe;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.plan ul {
+    text-align: left;
+    line-height: 2;
+    flex: 1;
+}
+
+.plan a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.plan a:hover {
+    background-color: #1e40af;
+}
+
+/* Popular plan */
+.popular {
+    border: 3px solid #f59e0b;
+}
+
+@media (max-width: 700px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%;
+    }
+}

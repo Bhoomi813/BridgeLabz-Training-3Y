@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Linear gradient section */
+.history {
+    min-height: 70vh;
+    padding: 100px 10%;
+    text-align: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+
+    /* Parallax effect */
+    background-attachment: fixed;
+}
+
+.history h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Radial gradient section */
+.places {
+    min-height: 70vh;
+    padding: 100px 10%;
+    text-align: center;
+    background: radial-gradient(circle, #ff9966, #ff5e62);
+    
+    /* Parallax effect */
+    background-attachment: fixed;
+    
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.places h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Normal background section */
+.culture {
+    min-height: 70vh;
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #185a9d;
+    margin: 0;
+}
+
+.culture h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section p {
+    max-width: 700px;
+    margin: 30px auto;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+}
