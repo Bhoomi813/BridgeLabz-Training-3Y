@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f6;
+}
+
+
+/* Main container */
+.container {
+    width: 450px;
+    margin: 40px auto;
+}
+
+
+/* Product box */
+.box {
+    position: relative;
+
+    width: 400px;
+
+    margin: auto;
+    padding: 15px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image container */
+.card {
+    position: relative;
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* Product image */
+.card img {
+    width: 100%;
+    height: 250px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* Discount badge */
+.box1 {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background-color: red;
+
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    z-index: 2;
+}
+
+
+.discount {
+    margin: 0;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Heart button */
+.heart {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+
+/* Category */
+.category {
+    margin-top: 30px;
+    margin-bottom: 8px;
+
+    font-size: 16px;
+
+    color: #1769aa;
+
+    display: inline-block;
+
+    background-color: #e5f0ff;
+}
+
+
+/* Product name */
+.product-name {
+    margin-top: 5px;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+
+    color: #1769aa;
+}
+
+
+/* Rating */
+.container1 {
+    margin-bottom: 15px;
+
+    color: #888;
+
+    font-size: 16px;
+}
+
+
+/* Stars */
+.container1 i {
+    color: rgb(255, 212, 59);
+
+    margin-right: 3px;
+}
+
+
+/* Price */
+.price {
+    margin: 15px 0;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.price del {
+    margin-left: 10px;
+
+    color: #888;
+
+    font-size: 16px;
+
+    font-weight: normal;
+}
+
+
+/* Add to cart button */
+.btn {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 10px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #333;
+}
