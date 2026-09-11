@@ -1,0 +1,128 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+}
+
+/* ---------------- ATTRIBUTE SELECTORS ---------------- */
+
+/* Selects input whose type is text */
+input[type="text"] {
+    border: 3px solid blue;
+}
+
+/* Selects links whose href starts with https */
+a[href^="https"] {
+    color: green;
+}
+
+/* ---------------- PSEUDO-CLASSES ---------------- */
+
+/* :hover changes style when mouse is over the element */
+li:hover {
+    background-color: lightblue;
+}
+
+/* :focus works when input is selected */
+input:focus {
+    background-color: lightyellow;
+}
+
+/* :nth-child() selects a particular child */
+li:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+/* ---------------- PSEUDO-ELEMENTS ---------------- */
+
+/* Adds content before heading */
+h2::before {
+    content: "★ ";
+}
+
+/* Adds content after heading */
+h2::after {
+    content: " ★";
+}
+
+/* ---------------- COMBINATORS ---------------- */
+
+/* > selects only direct children */
+.parent > p {
+    color: blue;
+}
+
+/* Space is descendant selector */
+.parent div p {
+    color: green;
+}
+
+/* + selects the paragraph immediately after another paragraph */
+.parent p + p {
+    background-color: lightgray;
+}
+
+/* ~ selects all following sibling paragraphs */
+.parent p ~ p {
+    padding: 5px;
+}
+
+/* Form elements */
+.form {
+    margin-top: 30px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+}
+
+/* List */
+.items {
+    margin: 20px;
+}
+
+.items li {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

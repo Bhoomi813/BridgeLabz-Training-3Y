@@ -1,0 +1,93 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main */
+main {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arrange boxes horizontally */
+.transform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Item */
+.item {
+    text-align: center;
+}
+
+/* Common box */
+.box {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    background-color: lightblue;
+    border: 3px solid #333;
+
+    font-weight: bold;
+
+    /* Smooth transformation */
+    transition: all 0.4s ease;
+}
+
+/* Rotate on hover */
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+/* Scale on hover */
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/* Translate on hover */
+.translate:hover {
+    transform: translate(20px, -20px);
+}
+
+/* Skew on hover */
+.skew:hover {
+    transform: skew(15deg);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}

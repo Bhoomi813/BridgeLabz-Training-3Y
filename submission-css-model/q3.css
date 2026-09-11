@@ -1,0 +1,89 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+
+    z-index: 10;
+}
+
+/* Main content */
+main {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+/* Linear Gradient */
+.linear {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* Linear gradient */
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    /* Parallax-like effect */
+    background-attachment: fixed;
+}
+
+.linear h2,
+.radial h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.linear p,
+.radial p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+/* Radial Gradient */
+.radial {
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* Radial gradient */
+    background: radial-gradient(circle, #ff9a9e, #fad0c4);
+}
+
+/* Fixed Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}

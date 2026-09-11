@@ -1,0 +1,103 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main section */
+main {
+    padding: 40px;
+}
+
+/* Flexbox to arrange boxes horizontally */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common styling for all boxes */
+.box {
+    width: 200px;
+    min-height: 150px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Solid border */
+.solid {
+    border: 5px solid blue;
+    padding: 20px;
+}
+
+/* Dashed border */
+.dashed {
+    border: 5px dashed green;
+    padding: 15px;
+}
+
+/* Double border */
+.double {
+    border: 8px double red;
+    padding: 25px;
+}
+
+/* Groove border */
+.groove {
+    border: 8px groove purple;
+    padding: 10px;
+}
+
+/* Hover effect */
+.box:hover {
+    border-color: orange;
+    transition: border-color 0.4s ease;
+}
+
+/* Rounded section */
+.rounded-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Rounded box */
+.rounded-box {
+    width: 300px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border: 5px solid #555;
+
+    /* Rounded corners */
+    border-radius: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,91 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main */
+main {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arrange cards in one row */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Common card styling */
+.card {
+    width: 250px;
+    height: 200px;
+
+    background-color: white;
+
+    padding: 30px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    /* Smooth animation */
+    transition: all 0.4s ease;
+}
+
+/* Different box shadows */
+.card1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.card2 {
+    box-shadow: 10px 10px 20px gray;
+}
+
+.card3 {
+    box-shadow: 0 5px 25px gray;
+}
+
+/* Heading shadow */
+.card h2 {
+    margin-bottom: 20px;
+
+    /* Text shadow */
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* Hover effect */
+.card:hover {
+    /* Card moves upward */
+    transform: translateY(-15px);
+
+    /* Larger shadow */
+    box-shadow: 10px 20px 30px gray;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
