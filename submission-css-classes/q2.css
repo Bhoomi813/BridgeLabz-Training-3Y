@@ -1,0 +1,92 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main */
+main {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center all tooltip examples */
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Tooltip parent */
+.tooltip {
+    position: relative;
+
+    padding: 15px 25px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip-text {
+    position: absolute;
+
+    /* Place tooltip above element */
+    bottom: 130%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 150px;
+    padding: 10px;
+
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+    border-radius: 5px;
+
+    /* Initially hidden */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Smooth fade effect */
+    transition: 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

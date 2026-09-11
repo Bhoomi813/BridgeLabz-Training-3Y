@@ -1,0 +1,123 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main */
+main {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arrange buttons using Flexbox */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* Common button styling */
+.btn {
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px #aaa;
+
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: gray;
+    color: white;
+    border: 2px solid gray;
+}
+
+/* Outline button */
+.outline {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+/* Disabled button */
+.disabled {
+    background-color: #ccc;
+    color: #777;
+    border: 2px solid #aaa;
+}
+
+/* Hover effect */
+.btn:hover:not(:disabled) {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 12px #999;
+}
+
+/* Active effect */
+.btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+/* Disabled pseudo-class */
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Information */
+.info {
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

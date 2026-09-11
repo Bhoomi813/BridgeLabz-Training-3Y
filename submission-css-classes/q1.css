@@ -1,0 +1,118 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Arrange examples in one row */
+.examples {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Individual example */
+.example {
+    width: 230px;
+    min-height: 200px;
+
+    background-color: white;
+    padding: 25px;
+
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px #aaa;
+}
+
+/* ---------------- HOVER ---------------- */
+
+/* Link changes color on hover */
+.example a:hover {
+    color: red;
+    background-color: #ffe0e0;
+}
+
+/* ---------------- FOCUS ---------------- */
+
+/* Button changes when focused */
+.example button:focus {
+    outline: 3px solid blue;
+    background-color: lightblue;
+}
+
+/* ---------------- ACTIVE ---------------- */
+
+/* Link changes while clicking */
+.active-link:active {
+    color: white;
+    background-color: green;
+}
+
+/* ---------------- NTH-CHILD ---------------- */
+
+/* Second list item gets different color */
+.example li:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+/* List styling */
+ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 5px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    padding: 8px;
+    color: blue;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

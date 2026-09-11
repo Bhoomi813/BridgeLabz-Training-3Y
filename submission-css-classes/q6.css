@@ -1,0 +1,176 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main */
+main {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Arrange animations horizontally */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+}
+
+/* Each animation item */
+.animation-item {
+    width: 180px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px #aaa;
+}
+
+/* ---------------- MOVING BOX ---------------- */
+
+.moving-box {
+    width: 50px;
+    height: 50px;
+
+    background-color: blue;
+
+    /* Apply animation */
+    animation-name: moveBox;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    /* Animation repeats */
+    animation-iteration-count: infinite;
+
+    /* Direction changes every cycle */
+    animation-direction: alternate;
+}
+
+/* Keyframes for moving box */
+@keyframes moveBox {
+
+    from {
+        transform: translateX(-40px);
+    }
+
+    to {
+        transform: translateX(40px);
+    }
+}
+
+/* ---------------- BOUNCING BALL ---------------- */
+
+.ball {
+    width: 50px;
+    height: 50px;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+    /* Infinite animation */
+    animation-iteration-count: infinite;
+
+    /* Delay before animation starts */
+    animation-delay: 0.5s;
+}
+
+/* Keyframes for ball */
+@keyframes bounce {
+
+    0% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+/* ---------------- COLOR CHANGING TEXT ---------------- */
+
+.color-text {
+    animation-name: changeColor;
+    animation-duration: 3s;
+
+    animation-timing-function: ease-in-out;
+
+    /* Repeat animation */
+    animation-iteration-count: infinite;
+}
+
+/* Keyframes for text color */
+@keyframes changeColor {
+
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .animation-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}

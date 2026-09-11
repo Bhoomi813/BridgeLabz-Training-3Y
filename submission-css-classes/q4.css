@@ -1,0 +1,105 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- ELEMENT SELECTOR ---------------- */
+
+/* Selects all h2 elements */
+h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+.content {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: white;
+}
+
+/* ---------------- CLASS SELECTOR ---------------- */
+
+/* Selects elements having class="special" */
+.special {
+    color: green;
+    font-weight: bold;
+}
+
+/* ---------------- ID SELECTOR ---------------- */
+
+/* Selects element having id="important" */
+#important {
+    color: red;
+    font-weight: bold;
+}
+
+/* ---------------- ATTRIBUTE SELECTOR ---------------- */
+
+/* Selects links having href attribute */
+a[href] {
+    color: purple;
+    text-decoration: none;
+}
+
+/* ---------------- DESCENDANT SELECTOR ---------------- */
+
+/* Selects all li inside .parent */
+.parent li {
+    padding: 8px;
+}
+
+/* ---------------- CHILD SELECTOR ---------------- */
+
+/* Selects only direct p children of .parent */
+.parent > p {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* ---------------- ADJACENT SIBLING ---------------- */
+
+/* Selects p immediately after ul */
+ul + p {
+    color: orange;
+}
+
+/* ---------------- GENERAL SIBLING ---------------- */
+
+/* Selects all p after ul */
+ul ~ p {
+    margin-top: 10px;
+}
+
+/* List */
+ul {
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
