@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 150px;
+        }
+
+        #counter {
+            color: green;
+        }
+
+        .warning {
+            color: yellow !important;
+            background: black;
+        }
+
+        .danger {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Live Character Counter</h2>
+
+    <textarea id="textBox" maxlength="100"></textarea>
+
+    <p>
+        Characters remaining:
+        <span id="counter">100</span>
+    </p>
+
+    <button id="resetBtn">Reset</button>
+
+    <script src="q2.js"></script>
+</body>
+</html>

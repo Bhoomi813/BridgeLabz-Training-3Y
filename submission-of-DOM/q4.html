@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Theme Switcher</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+
+        .dark {
+            background-color: #222;
+            color: white;
+        }
+
+        .blue {
+            background-color: lightblue;
+            color: darkblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body class="light" data-theme="light">
+
+    <h2>Theme Switcher</h2>
+
+    <button onclick="changeTheme('light')">Light</button>
+    <button onclick="changeTheme('dark')">Dark</button>
+    <button onclick="changeTheme('blue')">Blue</button>
+
+    <script src="q4.js"></script>
+</body>
+</html>

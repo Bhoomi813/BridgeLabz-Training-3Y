@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Dropdown</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        #dropdown {
+            width: 200px;
+            position: relative;
+        }
+
+        #dropdownButton {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #options {
+            display: none;
+            position: absolute;
+            width: 100%;
+            border: 1px solid black;
+            background: white;
+        }
+
+        .option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Custom Dropdown</h2>
+
+    <div id="dropdown">
+
+        <button id="dropdownButton">Select Option</button>
+
+        <div id="options">
+            <div class="option">JavaScript</div>
+            <div class="option">Python</div>
+            <div class="option">Java</div>
+            <div class="option">C++</div>
+        </div>
+
+    </div>
+
+    <script src="q8.js"></script>
+</body>
+</html>
