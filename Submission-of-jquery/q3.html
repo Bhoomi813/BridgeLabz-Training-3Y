@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive FAQ</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+        .faq {
+            max-width: 600px;
+            margin: auto;
+        }
+        .question {
+            background: #dbeafe;
+            padding: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .answer {
+            background: white;
+            padding: 15px;
+            display: none;
+        }
+        input {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<main class="faq">
+    <h1>Frequently Asked Questions</h1>
+
+    <section>
+        <h3 class="question">1. What is HTML?</h3>
+        <div class="answer">
+            HTML is used to create web pages.
+            <input type="text" placeholder="Your answer">
+        </div>
+    </section>
+
+    <section>
+        <h3 class="question">2. What is CSS?</h3>
+        <div class="answer">CSS is used to style web pages.</div>
+    </section>
+
+    <section>
+        <h3 class="question">3. What is JavaScript?</h3>
+        <div class="answer">JavaScript adds interactivity.</div>
+    </section>
+
+    <section>
+        <h3 class="question">4. What is jQuery?</h3>
+        <div class="answer">jQuery is a JavaScript library.</div>
+    </section>
+
+    <section>
+        <h3 class="question">5. What is Bootstrap?</h3>
+        <div class="answer">Bootstrap is a CSS framework.</div>
+    </section>
+</main>
+
+<script src="q3.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi jQuery Dashboard</title>
+
+    <!-- First jQuery version -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script>
+        // Save first jQuery version
+        var jq1 = jQuery.noConflict(true);
+    </script>
+
+    <!-- Second jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        // Save second jQuery version
+        var jq2 = jQuery.noConflict(true);
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+            text-align: center;
+        }
+        .widget {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 150px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .active {
+            background: #86efac;
+        }
+        #carousel {
+            background: #dbeafe;
+            padding: 30px;
+            margin: 20px auto;
+            width: 300px;
+        }
+        #modal {
+            display: none;
+            position: fixed;
+            top: 30%;
+            left: 30%;
+            width: 35%;
+            background: white;
+            padding: 30px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        .tooltip {
+            display: none;
+            color: blue;
+        }
+        button {
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+    <h1>Dashboard Widgets</h1>
+
+    <!-- Carousel -->
+    <section id="carousel">
+        <h2 id="slide">Slide 1</h2>
+    </section>
+
+    <!-- Widgets -->
+    <section>
+        <div class="widget" title="Student information">
+            Student Widget
+            <p class="tooltip">Student Details</p>
+        </div>
+
+        <div class="widget" title="Course information">
+            Course Widget
+            <p class="tooltip">Course Details</p>
+        </div>
+
+        <div class="widget" title="Result information">
+            Result Widget
+            <p class="tooltip">Result Details</p>
+        </div>
+
+        <div class="widget" title="Teacher information">
+            Teacher Widget
+            <p class="tooltip">Teacher Details</p>
+        </div>
+
+        <div class="widget" title="Attendance information">
+            Attendance Widget
+            <p class="tooltip">Attendance Details</p>
+        </div>
+    </section>
+
+    <button id="openModal">Show Notification</button>
+
+    <div id="modal">
+        <h2>Notification</h2>
+        <p>Welcome to your dashboard!</p>
+        <button id="closeModal">Close</button>
+    </div>
+
+</main>
+
+<script src="q9.js"></script>
+</body>
+</html>

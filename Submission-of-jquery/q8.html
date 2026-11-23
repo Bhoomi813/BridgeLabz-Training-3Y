@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Blog Posts</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+        .post {
+            background: white;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+        .featured {
+            background: #fef3c7;
+            border: 2px solid orange;
+        }
+        .tag {
+            background: #dbeafe;
+            padding: 5px 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+
+    <h1>Blog Management</h1>
+
+    <button id="add">Add New Post</button>
+    <button id="prepend">Prepend Featured Post</button>
+    <button id="remove">Remove Last Post</button>
+    <button id="tag">Add Tag</button>
+    <button id="highlight">Highlight Posts</button>
+
+    <section id="posts">
+
+        <article class="post">
+            <h2>Learn HTML</h2>
+            <p>HTML is the foundation of web development.</p>
+        </article>
+
+        <article class="post">
+            <h2>Learn CSS</h2>
+            <p>CSS makes websites beautiful.</p>
+        </article>
+
+        <article class="post">
+            <h2>Learn JavaScript</h2>
+            <p>JavaScript makes websites interactive.</p>
+        </article>
+
+        <article class="post">
+            <h2>Learn Python</h2>
+            <p>Python is a popular programming language.</p>
+        </article>
+
+        <article class="post">
+            <h2>Learn jQuery</h2>
+            <p>jQuery simplifies JavaScript operations.</p>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="q8.js"></script>
+</body>
+</html>

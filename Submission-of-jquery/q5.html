@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Directory</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #f1f5f9;
+        }
+        .department {
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+        }
+        .employee {
+            padding: 10px;
+            margin: 8px;
+            background: #dbeafe;
+            cursor: pointer;
+        }
+        .highlight {
+            background: #86efac;
+        }
+        .contact {
+            display: none;
+            color: blue;
+        }
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Team Members Directory</h1>
+
+    <button id="collapse">Collapse / Expand Team</button>
+    <button id="random">Select Random Employee</button>
+
+    <div id="team">
+
+        <section class="department">
+            <h2>IT Department</h2>
+
+            <div class="employee manager">
+                Manager: Rahul
+            </div>
+
+            <div class="employee">
+                Employee: Aman
+                <p class="contact">Email: aman@gmail.com</p>
+            </div>
+
+            <div class="employee">
+                Employee: Priya
+                <p class="contact">Email: priya@gmail.com</p>
+            </div>
+        </section>
+
+        <section class="department">
+            <h2>HR Department</h2>
+
+            <div class="employee manager">
+                Manager: Neha
+            </div>
+
+            <div class="employee">
+                Employee: Riya
+                <p class="contact">Email: riya@gmail.com</p>
+            </div>
+
+            <div class="employee">
+                Employee: Mohit
+                <p class="contact">Email: mohit@gmail.com</p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<script src="q5.js"></script>
+</body>
+</html>
