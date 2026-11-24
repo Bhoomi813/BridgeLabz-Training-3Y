@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee h3 {
+    margin: 0;
+    color: #333;
+}
+
+.status {
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.active {
+    color: green;
+}
+
+.inactive {
+    color: red;
+}
+
+.toggle {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.toggle.on {
+    background: green;
+}
+
+.toggle.off {
+    background: #777;
+}
+
+.toggle:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
